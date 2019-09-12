@@ -10,8 +10,13 @@ import Alerts from "./components/layout/Alerts";
 import ContactState from "./contacts/contact/ContatState";
 import AuthState from "./contacts/auth/AuthState";
 import AlertState from "./contacts/alert/AlertState";
+import setAuthToken from "./utils/setAuthToken";
 
 import "./App.css";
+
+if (localStorage.token) {
+  setAuthToken(localStorage.token);
+}
 
 const App = () => {
   return (
