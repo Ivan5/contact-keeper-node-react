@@ -12,7 +12,6 @@ import {
   LOGOUT,
   CLEAR_ERRORS
 } from "../types";
-import { stat } from "fs";
 
 const AuthState = props => {
   const initialState = {
